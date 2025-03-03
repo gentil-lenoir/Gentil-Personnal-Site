@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la biographie de GENTIL LE NOIR; un Développeur Web, Programmeur et Electronicien; suivez mon parcours, mes projets et mes compétences en technologie et développement.">
+    <meta name="keywords" content="développeur web, électronicien, programmeur, biographie, compétences, technologies, à-propos">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Biographie de GENTIL LE NOIR MB, Développeur Web, Programmeur et Electronicien">
+    <meta property="og:image" content="./img/passeport.png">
+    <meta property="og:description" content="Découvrez les parcours et les compétences de GENTIL LE NOIR, un développeur web, programmeur et electronicien passionné par la technologie et l'inovation">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/actualite.css">
+
+    <link rel="shortcut icon" href="../img/passeport.png" type="image/x-icon">
+
+    <title>Actualités a propos de Gentil_Le_NoiR</title> 
+
+</head>
+
+<body>
+    <header id="header">
+        <style>
+            #header{
+                left: 0;
+                right: 0;
+            }
+            #retour{
+                float: left;
+                background-color: rgba(0, 0, 255, 0);
+                color: white;
+                border: none;
+                padding: 2px;
+                margin-left: 20px;
+                font-size: 40px;
+                margin-top: -10px;
+            }
+            #return:hover{
+                color: wheat;
+            }
+            #return:active{
+                color: red;
+            }
+        </style>
+        <nav id="headerNav">
+            <div>
+                <button id="retour">&#10094;</button>
+            </div>
+            <ul id="ul">
+                <p ><a href="../index.html" class="loadLinks" id="page_accueil">Accueil</a></p>
+                <p><a href="../in/biographie.html" class="loadLinks" id="page_biographie">Blog</a></p>
+                <p><a href="../in/portfolio.html" class="loadLinks" id="page_portfolio">Portfolio</a></p>
+                <p><a href="../in/actualites.html" class="loadLinks" id="page_actualites">Actualités</a></p>
+                <p><a href="../in/contact.html" class="loadLinks" id="page_contact">Contacts</a></p>
+            </ul>
+        </nav>
+
+
+        <script>
+            let retour = document.getElementById('retour');
+
+            retour.addEventListener('click', function(){
+                history.back();
+            });
+        </script>
+
+    </header>
+<div style="height: 80px;"></div>
+
+<section id="theBlog">
+    <h1>Les actualités en rapport avec Gentil Le NoiR</h1>
+    <h3 style="font-weight: lighter;">A savoir plus-tot, Gentil Le NoiR va chaque fois publier ici des articles et des actualités appropos de lui et même les articles</h3>
+    <hr>
+    <section id="BlogActualites">
+        <h4 class="titre">Actualités, Infos et Articles</h4>
+        <p class="Signaliser" style="display: none;">les infos et les actualités seront affichés ici</p>
+        <!-- ce ci est a afficher losqu'il n'y a pas d'actualites -->
+        <section>
+            <div class="actuBloc">
+                <div class="imagePlace"><img src="../img/BACK GROUND GENTIL.jpg" alt="Image d'actualité" title="Image d'actualité" class="actuImage"></div>
+                <div class="Actus">
+                    <h3 class="title">Réussite de la création du site web personnel, qui parle généralement de Gentil_Le_NoiR_MB et tout ce qui lui concerne.</h3>
+                    <p class="content">En date du 23 f2vrier, j'ai terminé à créer mon site web personnel, et maintenant il est disponible sur le net dans différents moteurs de recherche.
+                        Je suis ravi de voir la fin de mon site et de la vivre dès ces jours là.
+                        Ce site web parle généralement de moi et tout ce qui me concerne comme la biographie, mes contacts, mon blog et mon portfolio et tout. Avec celui-ci, on peut facilement communiquer car tout le monde a la permission d'y accéder et de prendre des liens, contacts et tout.
+                        </p>
+                    <p class="note">ravi de terminer la création de mon site web !!!!!!</p>
+                </div>
+            </div><br>
+            
+            <!-- ici s'qffiche les actus -->
+        </section>
+    </section>
+        <br>
+        <hr>
+        <br>
+
+
+
+</body>
+<footer>
+    <p>Contactez moi sur :</p>
+    <ul id="footers_links">
+        <li><a href="https://wa.me/243978089552" target="_blank">WhatsApp</a></li>
+        <li><a href="mailto:gentillenoir075@gmail.com" target="_blank">Gmail</a></li>
+        <li><a href="https://github.com/gentil-lenoir" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gentil-le-noir-mali-ya-mungu-651751289" target="_blank">LinkedIn</a></li>
+    </ul>
+        <p id="footerYear"> &#169; <span id="yearPlace"></span> mon site personnel </p>
+        <p>Tout droits réservé </p>
+    </p>
+
+    <script>
+        let yearPlace = document.getElementById('yearPlace');
+
+        let thisDate = new Date();
+        let currentYear = thisDate.getFullYear();
+
+        yearPlace.innerText = currentYear;
+    </script>
+
+<script src="../assets/script.js"></script>
+
+<script>
+    window.history.pushState(null, "", "Actualites");
+</script>
+</footer>
+</html>

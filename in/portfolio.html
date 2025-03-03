@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la biographie de GENTIL LE NOIR; un Développeur Web, Programmeur et Electronicien; suivez mon parcours, mes projets et mes compétences en technologie et développement.">
+    <meta name="keywords" content="développeur web, électronicien, programmeur, biogrqphie, compétences, technologies, à-propos">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Biographie de GENTIL LE NOIR MB, Développeur Web, Programmeur et Electronicien">
+    <meta property="og:image" content="./img/passeport.png">
+     <meta property="og:description" content="Découvrez les parcours et les compétences de GENTIL LE NOIR, un développeur web, programmeur et electronicien passionné par la technologie et l'inovation">
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+
+    <link rel="shortcut icon" href="../img/passeport.png" type="image/x-icon">
+    <title>Portfolio de Gentil_Le_NoiR</title>
+    <style>
+        #page_portfolio{
+            background-color: maroon;
+            font-weight: bolder;
+            box-shadow: 0px 0px 10px white;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <style>
+        #header{
+            left: 0;
+            right: 0;
+        }
+        #retour{
+            float: left;
+            background-color: rgba(0, 0, 255, 0);
+            color: white;
+            border: none;
+            padding: 2px;
+            margin-left: 20px;
+            font-size: 40px;
+            margin-top: -10px;
+        }
+        @media(max-width:500px){
+            #retour{
+                padding: 1px;
+                margin-left: 2px;
+            }
+        }
+        #return:hover{
+            color: wheat;
+        }
+        #return:active{
+            color: red;
+        }
+    </style>
+    <nav id="headerNav">
+        <div>
+            <button id="retour">&#10094;</button>
+        </div>
+        <ul id="ul">
+            <p ><a href="../index.html" class="loadLinks" id="page_accueil">Accueil</a></p>
+            <p><a href="../in/biographie.html" class="loadLinks" id="page_biographie">Blog</a></p>
+            <p><a href="../in/portfolio.html" class="loadLinks" id="page_portfolio">Portfolio</a></p>
+            <p><a href="../in/actualites.html" class="loadLinks" id="page_actualites">Actualités</a></p>
+            <p><a href="../in/contact.html" class="loadLinks" id="page_contact">Contacts</a></p>
+        </ul>
+    </nav>
+
+
+    <script>
+        let retour = document.getElementById('retour');
+
+        retour.addEventListener('click', function(){
+            history.back();
+        });
+    </script>
+
+</header>
+
+
+    <main id="projects_container">
+        <section id="projectSection">
+            <h2 style="font-weight:lighter">Portfolio || Mes projets</h2>
+            <p>Dépuis 2025, j'ai eu a travailler sur beaucoup des projets, mais personnellement j'ai des projets interessants sugerés ci-dessous</p>
+            <div id="displayPortfolio">
+                    <div id="projects">
+                        <div id="project_id">
+                            <p>Projet N° 01</p>
+                        </div><br>
+                        <div id="projetTitle">
+                            <p>InfoGoma</p>
+                        </div><br>
+                        <div id="projectDescription">
+                            <p>Site web des informations à-propos de la ville de Goma, les Evenements, Actualités,...</p>
+                        </div><br>
+                    </div>
+
+                    <div id="projects">
+                        <div id="project_id">
+                            <p>Projet N° 02</p>
+                        </div><br>
+                        <div id="projetTitle">
+                            <p>BlocPlan</p>
+                        </div><br>
+                        <div id="projectDescription">
+                            <p>Bloc plan, un site qui aide aux planificateurs a sauvegarder leurs id2es, les datesm les projets,..., elle comprend le calendrier, l'agenda, le to-do list et le cahier de note</p>
+                        </div><br>
+                    </div>
+
+                    <div id="projects">
+                        <div id="project_id">
+                            <p>Projet N° 03</p>
+                        </div><br>
+                        <div id="projetTitle">
+                            <p>Electronique</p>
+                        </div><br>
+                        <div id="projectDescription">
+                            <p>Faire un stage en électronique industriel ; faire des projets et améliorer l'expérience des applications dans le domaine de l'électronique</p>
+                        </div><br>
+                    </div>
+
+                    <div id="projects">
+                        <div id="project_id">
+                            <p>Projet N° 04</p>
+                        </div><br>
+                        <div id="projetTitle">
+                            <p>Arduino</p>
+                        </div><br>
+                        <div id="projectDescription">
+                            <p>Faire des projets en Arduino, et précisément avec Arduino UNO, pour des grandes projets et l'automatisation</p>
+                        </div><br>
+                    </div>
+
+                    <div id="projects">
+                        <div id="project_id">
+                            <p>Projet N° 05</p>
+                        </div><br>
+                        <div id="projetTitle">
+                            <p>AppAll</p>
+                        </div><br>
+                        <div id="projectDescription">
+                            <p>Site web des rechercheurs des applications de toutes le categories, leurs correspondances et alternatives, pour Android, iOs, Ordinateur[Windows, Linux, macOs,...]</p>
+                        </div><br>
+                    </div>
+
+                    <div id="projects">
+                        <div id="project_id">
+                            <p>Projet N° 06</p>
+                        </div><br>
+                        <div id="projetTitle">
+                            <p>TUTO 1.0</p>
+                        </div><br>
+                        <div id="projectDescription">
+                            <p>Site web générateur des tutoriels, des livres pdf et des cours enligne sur des differentes techniques, ce site est dedié aux apprenants dans differents domaines confondus en technique</p>
+                        </div><br>
+                    </div>
+
+                    <div id="projects">
+                        <div id="project_id">
+                            <p>Projet N° 07</p>
+                        </div><br>
+                        <div id="projetTitle">
+                            <p>LoveUp</p>
+                        </div><br>
+                        <div id="projectDescription">
+                            <p>Site web de Chat, reseau social dedié aux amoureux pour les rencontres, les discussions d'amour...</p>
+                        </div><br>
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<footer>
+    <p>Contactez moi sur :</p>
+    <ul id="footers_links">
+        <li><a href="https://wa.me/243978089552" target="_blank">WhatsApp</a></li>
+        <li><a href="mailto:gentillenoir075@gmail.com" target="_blank">Gmail</a></li>
+        <li><a href="https://github.com/gentil-lenoir" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gentil-le-noir-mali-ya-mungu-651751289" target="_blank">LinkedIn</a></li>
+    </ul>
+        <p id="footerYear"> &#169; <span id="yearPlace"></span> mon site personnel </p>
+        <p>Tout droits réservé </p>
+    </p>
+
+    <script>
+        let yearPlace = document.getElementById('yearPlace');
+
+        let thisDate = new Date();
+        let currentYear = thisDate.getFullYear();
+
+        yearPlace.innerText = currentYear;
+    </script>
+
+<script src="../assets/script.js"></script>
+
+<script>
+    window.history.pushState(null, "", "Portfolio");
+</script>
+</footer>
+
+</html>

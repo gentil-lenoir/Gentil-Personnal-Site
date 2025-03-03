@@ -1,0 +1,125 @@
+    h1, h3{
+        font-weight: lighter;
+    }
+    #linkList{
+        list-style-type:none;
+        text-align: start;
+        float: left;
+        margin-left: 0px;
+    }
+    #linkList h3 a{
+        color: white;
+        font-size: 24px;
+    }
+    #linkList img{
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+    .link{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: start;
+        align-items: center;
+    }
+    .link p{
+        background-color: rgba(3, 6, 26, 0.829);
+        text-indent: 10px;
+        text-align: justify;
+    }
+    .linksLisDiv{
+        background-color: rgba(24, 29, 61, 0.733);
+        min-width: 70%;
+        border-radius: 10px;
+        
+    }
+    .linksLisDiv h3{
+        padding: 5px;
+        margin: 1px;
+        border: 1px solid blue;
+        border-radius: 10px;
+        display: inline;
+        background-color: black;
+    }
+    .linksLisDiv a{
+        color: wheat;
+    }
+    .hover-a:hover{
+        color: blue;
+        background-color: black;
+
+        border:1px solid rgb(124, 124, 238);
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .QRCode{
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(2, 1fr);
+
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px){
+        .QRCode{
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: repeat(1, 1fr);
+
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .QRCode img{
+        height: 90%;
+        width: 90%;
+
+        max-height: 400px;
+        max-width: 400px;
+    }
+    @media (max-width:800px){
+        #Message textarea{
+            width: 75%;
+        }
+        #nom, #email, #tel, #ind{
+            width: 60%;
+        }#gestion_link{
+            display: none;
+            visibility: hidden;
+        }
+
+    }
+    @media (max-width:600px){
+        #message textarea{
+            width:90%;
+        }
+        .subGroup{
+            display: flex;
+            flex-direction: column;
+        }
+        .subGroup h3{
+            width: auto;
+            max-width: 200px;
+        }
+        #nom, #email, #tel{
+            width: 80%;
+        }
+        #gestion_link{
+            display: none;
+            visibility: hidden;
+        }
+    }
+    @media (max-width:500px){
+        li img{
+            display: none;
+            visibility: hidden;
+            margin: 0px;
+        }
+        #linkList{
+            margin-left: -25px;
+            float: left;
+            align-items: start;
+            list-style-type: unset;
+        }
+    }
